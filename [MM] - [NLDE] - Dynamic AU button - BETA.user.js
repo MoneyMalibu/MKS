@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         [MM] - [NLDE] - Dynamic AU button
+// @name         [MM] - [NLDE] - Dynamic AU button - BETA
 // @namespace    http://tampermonkey.net/
 // @version      2020.08.23.00.01
 // @description  try to take over the world!
