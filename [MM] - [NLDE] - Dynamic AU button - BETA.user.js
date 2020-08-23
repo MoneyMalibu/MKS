@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - Dynamic AU button - BETA
 // @namespace    http://tampermonkey.net/
-// @version      2020.08.23.00.01
+// @version      2020.08.24.00.01
 // @description  try to take over the world!
 // @author       You
-// @updateRL     https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20Dynamic%20AU%20button%20-%20BETA.user.js
-// @downloadURL  https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20Dynamic%20AU%20button%20-%20BETA.user.js
+// @updateRL     https://github.com/MoneyMalibu/Meldkamer/raw/master/%5BMM%5D%20-%20%5BNL%5D%5BDE%5D%20-%20Missiehelper%20-%20NEW.user.js
+// @downloadURL  https://github.com/MoneyMalibu/Meldkamer/raw/master/%5BMM%5D%20-%20%5BNL%5D%5BDE%5D%20-%20Missiehelper%20-%20NEW.user.js
 // @match        https://www.meldkamerspel.com/missions/*
 // @grant        none
 // ==/UserScript==
@@ -108,7 +108,7 @@ function SelectVoertuigen() {
 
             }
             var tag = document.getElementById("MissieAfvullen");
-            if (ALLSET = 1) {
+            if (ALLSET == 1) {
                 tag.style.background = "green";
             } else {
                 tag.style.background = "red";
@@ -446,7 +446,7 @@ function LoadNLVoertuigen() {
     VoertuigenDefinitie[47][0] = 54; //ID Voertuig
     VoertuigenDefinitie[47][1] = 'AT-O'; //Voertuig naam
     VoertuigenDefinitie[47][2] = 'at_o'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
-    VoertuigenDefinitie[47] = 0; //Aantal onderweg
+    VoertuigenDefinitie[47][3] = 0; //Aantal onderweg
 
     VoertuigenDefinitie[48] = [];
     VoertuigenDefinitie[48][0] = 55; //ID Voertuig
