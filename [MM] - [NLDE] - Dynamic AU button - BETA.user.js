@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - Dynamic AU button - BETA
 // @namespace    http://tampermonkey.net/
-// @version      2020.08.24.00.02
+// @version      2020.08.24.00.03
 // @description  try to take over the world!
 // @author       You
 // @updateRL     https://github.com/MoneyMalibu/Meldkamer/raw/master/%5BMM%5D%20-%20%5BNL%5D%5BDE%5D%20-%20Missiehelper%20-%20NEW.user.js
@@ -459,6 +459,43 @@ function LoadNLVoertuigen() {
     VoertuigenDefinitie[49][1] = 'ZULU'; //Voertuig naam
     VoertuigenDefinitie[49][2] = 'police_helicopters'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
     VoertuigenDefinitie[49][3] = 0; //Aantal onderweg
+
+    VoertuigenDefinitie[50] = [];
+    VoertuigenDefinitie[50][0] = 27; //ID Voertuig
+    VoertuigenDefinitie[50][1] = 'Adembeschermingshaakarmbak'; //Voertuig naam
+    VoertuigenDefinitie[50][2] = 'mobile_air_vehicles'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[50][3] = 0; //Aantal onderweg
+
+    VoertuigenDefinitie[51] = [];
+    VoertuigenDefinitie[51][0] = 29; //ID Voertuig
+    VoertuigenDefinitie[51][1] = 'Watertankhaakarmbak'; //Voertuig naam
+    VoertuigenDefinitie[51][2] = 'water_tankers'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[51][3] = 0; //Aantal onderweg
+
+    VoertuigenDefinitie[52] = [];
+    VoertuigenDefinitie[52][0] = 32; //ID Voertuig
+    VoertuigenDefinitie[52][1] = 'Commandohaakarmbak'; //Voertuig naam
+    VoertuigenDefinitie[52][2] = 'elw3'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[52][3] = 0; //Aantal onderweg
+
+    VoertuigenDefinitie[52] = [];
+    VoertuigenDefinitie[52][0] = 32; //ID Voertuig
+    VoertuigenDefinitie[52][1] = 'Commandohaakarmbak'; //Voertuig naam
+    VoertuigenDefinitie[52][2] = 'water_tankers'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[52][3] = 0; //Aantal onderweg
+
+    VoertuigenDefinitie[53] = [];
+    VoertuigenDefinitie[53][0] = 45; //ID Voertuig
+    VoertuigenDefinitie[53][1] = 'Dompelpomphaakarmbak'; //Voertuig naam
+    VoertuigenDefinitie[53][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[53][3] = 0; //Aantal onderweg
+
+    VoertuigenDefinitie[54] = [];
+    VoertuigenDefinitie[54][0] = 51; //ID Voertuig
+    VoertuigenDefinitie[54][1] = 'Hulpverleningshaakarmbak'; //Voertuig naam
+    VoertuigenDefinitie[54][2] = 'heavy_rescue_vehicles'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[54][3] = 0; //Aantal onderweg
+
 }
 
 function LoadIncCars() {
