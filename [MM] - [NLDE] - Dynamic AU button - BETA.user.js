@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - Dynamic AU button - BETA
 // @namespace    http://tampermonkey.net/
-// @version      2020.08.24.00.04
+// @version      2020.08.24.00.05
 // @description  try to take over the world!
 // @author       You
 // @updateRL     https://github.com/MoneyMalibu/Meldkamer/raw/master/%5BMM%5D%20-%20%5BNL%5D%5BDE%5D%20-%20Missiehelper%20-%20NEW.user.js
@@ -27,8 +27,6 @@ var GameMissieData;
     LoadIncCars();
     console.log("[MM] - MKS - AU Dynamic - Voertuigen inladen onderweg/terplaatsen");
 
-
-
     try {
         console.log("Kijken of data er staat");
         console.log(JSON.parse(localStorage["NLMissions"]));
@@ -46,9 +44,6 @@ var GameMissieData;
         console.log("[MM] - MKS - AU Dynamic - Afvullen click");
         SelectVoertuigen();
     });
-
-
-
 })();
 
 function SelectVoertuigen() {
