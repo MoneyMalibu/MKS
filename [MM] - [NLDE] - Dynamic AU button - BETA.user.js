@@ -473,16 +473,10 @@ function LoadNLVoertuigen() {
     VoertuigenDefinitie[52][2] = 'elw3'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
     VoertuigenDefinitie[52][3] = 0; //Aantal onderweg
 
-    VoertuigenDefinitie[52] = [];
-    VoertuigenDefinitie[52][0] = 32; //ID Voertuig
-    VoertuigenDefinitie[52][1] = 'Commandohaakarmbak'; //Voertuig naam
-    VoertuigenDefinitie[52][2] = 'water_tankers'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
-    VoertuigenDefinitie[52][3] = 0; //Aantal onderweg
-
     VoertuigenDefinitie[53] = [];
     VoertuigenDefinitie[53][0] = 45; //ID Voertuig
     VoertuigenDefinitie[53][1] = 'Dompelpomphaakarmbak'; //Voertuig naam
-    VoertuigenDefinitie[53][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[53][2] = 'water_tankers'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
     VoertuigenDefinitie[53][3] = 0; //Aantal onderweg
 
     VoertuigenDefinitie[54] = [];
