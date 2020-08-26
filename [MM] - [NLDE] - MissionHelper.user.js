@@ -20,6 +20,11 @@ function Lightbox_Status() {
     var x = document.getElementById("lightbox_box");
     if (window.getComputedStyle(x).display === "none") {
         console.log("Status lightbox: " + window.getComputedStyle(x).display);
+        //Openen van een nieuw meldingsscherm
+        var newMissions = document.getElementById("mission_list").getElementsByClassName("panel panel-default  mission_panel_red");
+        console.log(newMissions);
+        var teamMissions = document.getElementById("mission_list").getElementsByClassName("panel panel-default panel-success ");
+        console.log(teamMissions);
     }
 
     setTimeout(function(){ 
