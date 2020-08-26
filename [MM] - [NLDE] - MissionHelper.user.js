@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - MissionHelper
 // @namespace    http://tampermonkey.net/
-// @version      2020.08.24.00.17
+// @version      2020.08.24.00.20
 // @description  try to take over the world!
 // @author       You
 // @updateRL     https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20MissionHelper.user.js
@@ -27,7 +27,14 @@ function Lightbox_Status() {
         console.log("[MM] - [NLDE] - Missionhelper - Data verkregen")
 
         //Missie openen
-        document.getElementById("mission_list").getElementsByClassName("panel panel-default  mission_panel_red")[0].children[0].childNodes[0].click;
+        newMissions.forEach(element => {
+             console.log(element);
+            let tmpMissionClass = element.className.contains("panel-success");
+            console.log(tmpMissionClass);
+        });
+
+        var buttonid = newMissions[0].childNodes[0].childNodes[0].id;
+        document.getElementById(buttonid).click();
 
     }
 
