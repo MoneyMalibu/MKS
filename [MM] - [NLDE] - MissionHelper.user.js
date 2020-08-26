@@ -11,34 +11,16 @@
 // ==/UserScript==
 
 (function () {
-    // Blocker is the element that has a changing display value
-    var blocker = document.querySelector('#lightbox_box');
-    // Trigger changes the display value of blocker
-    var trigger = document.querySelector('#trigger');
-    // Our mutation observer, which we attach to blocker later
-    var observer = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-            // Was it the style attribute that changed? (Maybe a classname or other attribute change could do this too? You might want to remove the attribute condition) Is display set to 'none'?
-            console.log(mutation);
-            if (mutation.attributeName === 'style' && window.getComputedStyle(blocker).getPropertyValue('display') !== 'none'
-            ) {
-                alert('#blocker\'s style just changed, and its display value is no longer \'none\'');
-            }
-        });
-    });
-
-    // Attach the mutation observer to blocker, and only when attribute values change
-    observer.observe(blocker, { attributes: true });
-
-    // Make trigger change the style attribute of blocker
-    trigger.addEventListener('click', function () {
-        blocker.removeAttribute('style');
-    }, false);
+Lightbox_Status();
 })
 
 function Lightbox_Status() {
+    console.log("Status controle");
     var x = document.getElementById("lightbox_box");
     if (window.getComputedStyle(x).display === "none") {
         console.log("Status lightbox: " & window.getComputedStyle(x).display)
     }
+
+    setTimeout(function(){ Lightbox_Status; }, 1000);
+
 }
