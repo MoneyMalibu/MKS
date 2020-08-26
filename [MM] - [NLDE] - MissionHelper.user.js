@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - MissionHelper
 // @namespace    http://tampermonkey.net/
-// @version      2020.08.24.00.10
+// @version      2020.08.24.00.11
 // @description  try to take over the world!
 // @author       You
 // @updateRL     https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20MissionHelper.user.js
@@ -19,6 +19,7 @@
     var observer = new MutationObserver(function (mutations) {
         mutations.forEach(function (mutation) {
             // Was it the style attribute that changed? (Maybe a classname or other attribute change could do this too? You might want to remove the attribute condition) Is display set to 'none'?
+            console.log(mutation);
             if (mutation.attributeName === 'style' && window.getComputedStyle(blocker).getPropertyValue('display') !== 'none'
             ) {
                 alert('#blocker\'s style just changed, and its display value is no longer \'none\'');
@@ -34,3 +35,10 @@
         blocker.removeAttribute('style');
     }, false);
 })
+
+function Lightbox_Status() {
+    var x = document.getElementById("lightbox_box");
+    if (window.getComputedStyle(x).display === "none") {
+        console.log("Status lightbox: " & window.getComputedStyle(x).display)
+    }
+}
