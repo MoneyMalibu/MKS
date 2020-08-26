@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - MissionHelper
 // @namespace    http://tampermonkey.net/
-// @version      2020.08.24.00.14
+// @version      2020.08.24.00.15
 // @description  try to take over the world!
 // @author       You
 // @updateRL     https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20MissionHelper.user.js
