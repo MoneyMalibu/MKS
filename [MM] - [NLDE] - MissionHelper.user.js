@@ -42,7 +42,7 @@ function Lightbox_Status() {
 
 
         //Missie openen
-        for(var x = 0; x < newMissions.length -1; x++){
+        for(var x = 0; x < newMissions.length; x++){
 
             //normale meldingen openen
             let tmpMissionClass = newMissions[x].className.includes("panel-success");
