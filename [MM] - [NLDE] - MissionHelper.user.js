@@ -67,7 +67,7 @@ function SendTeamMissions() {
     //Missie openen, 1 voertuig sturen
     for(var x = 0; x < teamsMissions.length -1; x++){
         //normale meldingen openen
-        let tmpMissionClass = teamsMissions[x].className.includes("glyphicon glyphicon-user hidden");
+        let tmpMissionClass = teamsMissions[x].children[0].childNodes[2].className.includes("glyphicon glyphicon-user hidden");
         if (tmpMissionClass == false && MeldingTeamVerwerken == true){
             var buttonid = teamsMissions[x].childNodes[0].childNodes[0].id;
             document.getElementById(buttonid).click();
