@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - MissionHelper
 // @namespace    http://tampermonkey.net/
-// @version      2020.08.27.00.02
+// @version      2020.08.27.00.03
 // @description  try to take over the world!
 // @author       You
 // @updateRL     https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20MissionHelper.user.js
@@ -68,7 +68,7 @@ function SendTeamMissions() {
     for(var x = 0; x < teamsMissions.length -1; x++){
         //normale meldingen openen
         let tmpMissionClass = teamsMissions[x].children[0].childNodes[2].className.includes("glyphicon glyphicon-user hidden");
-        if (tmpMissionClass == false && MeldingTeamVerwerken == true){
+        if (tmpMissionClass == true && MeldingTeamVerwerken == true){
             var buttonid = teamsMissions[x].childNodes[0].childNodes[0].id;
             document.getElementById(buttonid).click();
             break;
