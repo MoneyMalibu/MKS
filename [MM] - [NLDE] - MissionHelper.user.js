@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - MissionHelper
 // @namespace    http://tampermonkey.net/
-// @version      2020.08.24.00.21
+// @version      2020.08.27.00.01
 // @description  try to take over the world!
 // @author       You
 // @updateRL     https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20MissionHelper.user.js
@@ -22,7 +22,8 @@ var MeldingAfvullenTeamVerwerken = false;
 function MeldingenVerwerken(){
 
     //Bepalen op welke tijden de meldingen verwerkt moeten worden
-    MeldingNormaalVerwerken = true
+    MeldingNormaalVerwerken = false;
+    MeldingTeamVerwerken = true;
 }
 
 function Lightbox_Status() {
@@ -36,7 +37,7 @@ function Lightbox_Status() {
         //Openen van een nieuw meldingsscherm
         var newMissions = document.getElementById("mission_list").getElementsByClassName("panel panel-default  mission_panel_red");
         //var teamMissions = document.getElementById("mission_list").getElementsByClassName("panel panel-default panel-success ");
-        //var teamsMissions = document.getElementById("mission_list_alliance").getElementsByClassName("panel panel-default panel-success");
+        
         console.log("[MM] - [NLDE] - Missionhelper - Data verkregen")
 
 
@@ -51,9 +52,26 @@ function Lightbox_Status() {
                 break;
             }
         }
+
+
+        SendTeamMissions();
     }
 
     setTimeout(function () {
         Lightbox_Status();
     }, 1000);
+}
+
+function SendTeamMissions() {
+    var teamsMissions = document.getElementById("mission_list_alliance").getElementsByClassName("panel panel-default panel-success");
+    //Missie openen, 1 voertuig sturen
+    for(var x = 0; x < teamsMissions.length -1; x++){
+        //normale meldingen openen
+        let tmpMissionClass = teamsMissions[x].className.includes("glyphicon glyphicon-user hidden");
+        if (tmpMissionClass == false && MeldingTeamVerwerken == true){
+            var buttonid = teamsMissions[x].childNodes[0].childNodes[0].id;
+            document.getElementById(buttonid).click();
+            break;
+        }
+    }
 }
