@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - Dynamic AU button - BETA
 // @namespace    http://tampermonkey.net/
-// @version      2020.08.30.00.02
+// @version      2020.10.03.00.01
 // @description  try to take over the world!
 // @author       You
 // @updateRL     https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNL%5D%5BDE%5D%20-%20Missiehelper%20-%20NEW.user.js
@@ -485,6 +485,21 @@ function LoadNLVoertuigen() {
     VoertuigenDefinitie[54][1] = 'Hulpverleningshaakarmbak'; //Voertuig naam
     VoertuigenDefinitie[54][2] = 'heavy_rescue_vehicles'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
     VoertuigenDefinitie[54][3] = 0; //Aantal onderweg
+
+    VoertuigenDefinitie[55] = [];
+    VoertuigenDefinitie[55][0] = 59; //ID Voertuig
+    VoertuigenDefinitie[55][1] = 'Noodhulp - Onopvallend'; //Voertuig naam
+    VoertuigenDefinitie[55][2] = 'police_cars'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[55][3] = 0; //Aantal onderweg
+
+    VoertuigenDefinitie[56] = [];
+    VoertuigenDefinitie[56][0] = 60; //ID Voertuig
+    VoertuigenDefinitie[56][1] = 'Dienstbus Biketeam'; //Voertuig naam
+    VoertuigenDefinitie[56][2] = 'bike_police'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[56][3] = 0; //Aantal onderweg
+
+
+
 
 }
 
