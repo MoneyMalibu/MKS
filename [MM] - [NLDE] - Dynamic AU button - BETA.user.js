@@ -287,7 +287,7 @@ function LoadVoertuigen() {
     VoertuigenDefinitie[18][1] = 'Commandovoertuig'; //Voertuig naam
     VoertuigenDefinitie[18][2] = 'elw3'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
     VoertuigenDefinitie[18][3] = 0; //Aantal onderweg
-    VoertuigenDefinitie[18]][4] = "NL"; // GameVersie
+    VoertuigenDefinitie[18][4] = "NL"; // GameVersie
 
     VoertuigenDefinitie[19] = [];
     VoertuigenDefinitie[19][0] = 24; //ID Voertuig
