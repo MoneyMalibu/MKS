@@ -1020,6 +1020,160 @@ function LoadVoertuigen() {
     VoertuigenDefinitie[1065][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
     VoertuigenDefinitie[1065][3] = 0; //Aantal onderweg
     VoertuigenDefinitie[1065][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1066] = [];
+    VoertuigenDefinitie[1066][0] = 66; //ID Voertuig
+    VoertuigenDefinitie[1066][1] = 'Anh MzB'; //Voertuig naam
+    VoertuigenDefinitie[1066][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1066][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1066][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1067] = [];
+    VoertuigenDefinitie[1067][0] = 67; //ID Voertuig
+    VoertuigenDefinitie[1067][1] = 'Anh SchlB'; //Voertuig naam
+    VoertuigenDefinitie[1067][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1067][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1067][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1068] = [];
+    VoertuigenDefinitie[1068][0] = 68; //ID Voertuig
+    VoertuigenDefinitie[1068][1] = 'Anh MzAB'; //Voertuig naam
+    VoertuigenDefinitie[1068][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1068][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1068][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1069] = [];
+    VoertuigenDefinitie[1069][0] = 69; //ID Voertuig
+    VoertuigenDefinitie[1069][1] = 'Tauchkraftwagen'; //Voertuig naam
+    VoertuigenDefinitie[1069][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1069][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1069][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1070] = [];
+    VoertuigenDefinitie[1070][0] = 70; //ID Voertuig
+    VoertuigenDefinitie[1070][1] = 'MZB'; //Voertuig naam
+    VoertuigenDefinitie[1070][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1070][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1070][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1071] = [];
+    VoertuigenDefinitie[1071][0] = 71; //ID Voertuig
+    VoertuigenDefinitie[1071][1] = 'AB-MZB'; //Voertuig naam
+    VoertuigenDefinitie[1071][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1071][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1071][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1072] = [];
+    VoertuigenDefinitie[1072][0] = 72; //ID Voertuig
+    VoertuigenDefinitie[1072][1] = 'WaWe 10'; //Voertuig naam
+    VoertuigenDefinitie[1072][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1072][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1072][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1073] = [];
+    VoertuigenDefinitie[1073][0] = 73; //ID Voertuig
+    VoertuigenDefinitie[1073][1] = 'GRTW'; //Voertuig naam
+    VoertuigenDefinitie[1073][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1073][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1073][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1074] = [];
+    VoertuigenDefinitie[1074][0] = 74; //ID Voertuig
+    VoertuigenDefinitie[1074][1] = 'NAW'; //Voertuig naam
+    VoertuigenDefinitie[1074][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1074][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1074][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1075] = [];
+    VoertuigenDefinitie[1075][0] = 75; //ID Voertuig
+    VoertuigenDefinitie[1075][1] = 'FLF'; //Voertuig naam
+    VoertuigenDefinitie[1075][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1075][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1075][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1076] = [];
+    VoertuigenDefinitie[1076][0] = 76; //ID Voertuig
+    VoertuigenDefinitie[1076][1] = 'Rettungstreppe'; //Voertuig naam
+    VoertuigenDefinitie[1076][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1076][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1076][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1077] = [];
+    VoertuigenDefinitie[1077][0] = 77; //ID Voertuig
+    VoertuigenDefinitie[1077][1] = 'AB-Gefahrgut'; //Voertuig naam
+    VoertuigenDefinitie[1077][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1077][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1077][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1078] = [];
+    VoertuigenDefinitie[1078][0] = 78; //ID Voertuig
+    VoertuigenDefinitie[1078][1] = 'AB-Einsatzleitung'; //Voertuig naam
+    VoertuigenDefinitie[1078][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1078][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1078][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1079] = [];
+    VoertuigenDefinitie[1079][0] = 79; //ID Voertuig
+    VoertuigenDefinitie[1079][1] = 'SEK - ZF'; //Voertuig naam
+    VoertuigenDefinitie[1079][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1079][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1079][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1080] = [];
+    VoertuigenDefinitie[1080][0] = 80; //ID Voertuig
+    VoertuigenDefinitie[1080][1] = 'SEK - MTF'; //Voertuig naam
+    VoertuigenDefinitie[1080][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1080][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1080][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1081] = [];
+    VoertuigenDefinitie[1081][0] = 81; //ID Voertuig
+    VoertuigenDefinitie[1081][1] = 'MEK - ZF'; //Voertuig naam
+    VoertuigenDefinitie[1081][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1081][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1081][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1082] = [];
+    VoertuigenDefinitie[1082][0] = 82; //ID Voertuig
+    VoertuigenDefinitie[1082][1] = 'MEK - MTF'; //Voertuig naam
+    VoertuigenDefinitie[1082][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1082][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1082][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1083] = [];
+    VoertuigenDefinitie[1083][0] = 83; //ID Voertuig
+    VoertuigenDefinitie[1083][1] = 'GW-Werkfeuerwehr'; //Voertuig naam
+    VoertuigenDefinitie[1083][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1083][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1083][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1084] = [];
+    VoertuigenDefinitie[1084][0] = 84; //ID Voertuig
+    VoertuigenDefinitie[1084][1] = 'ULF mit Löscharm'; //Voertuig naam
+    VoertuigenDefinitie[1084][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1084][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1084][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1085] = [];
+    VoertuigenDefinitie[1085][0] = 85; //ID Voertuig
+    VoertuigenDefinitie[1085][1] = 'TM 50'; //Voertuig naam
+    VoertuigenDefinitie[1085][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1085][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1085][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1086] = [];
+    VoertuigenDefinitie[1086][0] = 86; //ID Voertuig
+    VoertuigenDefinitie[1086][1] = 'Turbolöscher'; //Voertuig naam
+    VoertuigenDefinitie[1086][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1086][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1086][4] = "DE"; // GameVersie
+    
+    VoertuigenDefinitie[1087] = [];
+    VoertuigenDefinitie[1087][0] = 87; //ID Voertuig
+    VoertuigenDefinitie[1087][1] = 'TLF 4000'; //Voertuig naam
+    VoertuigenDefinitie[1087][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[1087][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[1087][4] = "DE"; // GameVersie
 
     // https://github.com/LSS-Manager/LSSM-V.4/blob/f7798325591b7b2c104d59667e8e508e2160abe8/src/i18n/de_DE.ts#L84
     // https://github.com/LSS-Manager/LSSM-V.4/blob/dev/src/modules/missionHelper/i18n/de_DE.json
