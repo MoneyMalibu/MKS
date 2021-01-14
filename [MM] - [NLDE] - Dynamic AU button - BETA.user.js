@@ -4,8 +4,8 @@
 // @version      2021.01.14.00.01
 // @description  try to take over the world!
 // @author       You
-// @updateRL     https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNL%5D%5BDE%5D%20-%20Missiehelper%20-%20NEW.user.js
-// @downloadURL  https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNL%5D%5BDE%5D%20-%20Missiehelper%20-%20NEW.user.js
+// @updateRL     https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20Dynamic%20AU%20button%20-%20BETA.user.js
+// @downloadURL  https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20Dynamic%20AU%20button%20-%20BETA.user.js
 // @match        https://www.meldkamerspel.com/missions/*
 // @grant        none
 // ==/UserScript==
