@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - Dynamic AU button - BETA
 // @namespace    http://tampermonkey.net/
-// @version      2021.01.14.00.01
+// @version      2021.01.14.00.02
 // @description  try to take over the world!
 // @author       You
 // @updateRL     https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20Dynamic%20AU%20button%20-%20BETA.user.js
