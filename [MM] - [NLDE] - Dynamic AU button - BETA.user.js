@@ -406,7 +406,7 @@ function LoadVoertuigen() {
     VoertuigenDefinitie[6][4] = "NL"; // GameVersie
 
     VoertuigenDefinitie[7] = [];
-    VoertuigenDefinitie[7][0] = 6; //ID Voertuig
+    VoertuigenDefinitie[7][0] = 7; //ID Voertuig
     VoertuigenDefinitie[7][1] = 'TST 6/7'; //Voertuig naam
     VoertuigenDefinitie[7][2] = 'firetrucks'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
     VoertuigenDefinitie[7][3] = 0; //Aantal onderweg
