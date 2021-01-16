@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - Dynamic AU button - BETA
 // @namespace    http://tampermonkey.net/
-// @version      2021.01.16.00.01
+// @version      2021.01.16.00.02
 // @description  try to take over the world!
 // @author       You
 // @updateRL     https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20Dynamic%20AU%20button%20-%20BETA.user.js
@@ -157,10 +157,6 @@ function SelectVoertuigen() {
                     }
 
                 }
-
-
-
-
             }
 
             for (var c in GameMissieData[i].additional) {
@@ -250,56 +246,55 @@ function SelectVoertuigen() {
                                 ALLSET = 0;
                             }
                         }
+                    }
+                }
+            }
 
+            for (var c in GameMissieData[i].chances) {
 
+                if (c === 'nef') {
 
-                        // MMT Sturen
-                        VoertuigType = "MMT-Heli";
-                        VoertuigAantal = 1;
+                    // MMT Sturen
 
-                        TotaalMissieAanwezig = 0;
-                        for (var v = 0; v < VoertuigenDefinitie.length; v++) {
-                            if (VoertuigenDefinitie[v][2] == VoertuigType) {
-                                TotaalMissieAanwezig += VoertuigenDefinitie[v][3];
-                            }
+                    let VoertuigType = c;
+                    let VoertuigAantal = GameMissieData[i].additional[c];
+
+                    let TotaalMissieAanwezig = 0;
+                    for (var v = 0; v < VoertuigenDefinitie.length; v++) {
+                        if (VoertuigenDefinitie[v][2] == VoertuigType) {
+                            TotaalMissieAanwezig += VoertuigenDefinitie[v][3];
                         }
-                        console.log("[MM] - MKS - AU Dynamic - Totaal naar melding onderweg: " + TotaalMissieAanwezig);
+                    }
+                    console.log("[MM] - MKS - AU Dynamic - Totaal naar melding onderweg: " + TotaalMissieAanwezig);
 
-                        if (TotaalMissieAanwezig < VoertuigAantal) {
-                            console.log("[MM] - MKS - AU Dynamic - Stuur extra voertuigen");
-                            let NieuweNodig = VoertuigAantal - TotaalMissieAanwezig;
-                            let NewSetCount = 0;
+                    if (TotaalMissieAanwezig < VoertuigAantal) {
+                        console.log("[MM] - MKS - AU Dynamic - Stuur extra voertuigen");
+                        let NieuweNodig = VoertuigAantal - TotaalMissieAanwezig;
+                        let NewSetCount = 0;
 
-                            $('#vehicle_show_table_all tbody tr').map(function () {
-                                var $row = $(this);
-                                $(this).closest('td').find(':checkbox').prop('checked', true);
+                        $('#vehicle_show_table_all tbody tr').map(function () {
+                            var $row = $(this);
+                            $(this).closest('td').find(':checkbox').prop('checked', true);
 
-                                var checkboxid = this.childNodes[1].firstElementChild.id;
-                                var autoid = this.childNodes[5].attributes["0"].nodeValue;
+                            var checkboxid = this.childNodes[1].firstElementChild.id;
+                            var autoid = this.childNodes[5].attributes["0"].nodeValue;
 
-                                for (var v = 0; v < VoertuigenDefinitie.length; v++) {
-                                    if (VoertuigenDefinitie[v][0] == autoid) {
-                                        if (VoertuigenDefinitie[v][2] == VoertuigType) {
-                                            if (NewSetCount < NieuweNodig) {
-                                                document.getElementById(checkboxid).checked = true;
-                                                NewSetCount += 1;
-                                            }
+                            for (var v = 0; v < VoertuigenDefinitie.length; v++) {
+                                if (VoertuigenDefinitie[v][0] == autoid) {
+                                    if (VoertuigenDefinitie[v][2] == VoertuigType) {
+                                        if (NewSetCount < NieuweNodig) {
+                                            document.getElementById(checkboxid).checked = true;
+                                            NewSetCount += 1;
                                         }
                                     }
                                 }
-                            })
-
-                            if (NewSetCount < NieuweNodig) {
-                                ALLSET = 0;
                             }
+                        })
+
+                        if (NewSetCount < NieuweNodig) {
+                            ALLSET = 0;
                         }
-
-
-
                     }
-
-
-
                 }
             }
 
@@ -525,7 +520,7 @@ function LoadVoertuigen() {
     VoertuigenDefinitie[23] = [];
     VoertuigenDefinitie[23][0] = 23; //ID Voertuig
     VoertuigenDefinitie[23][1] = 'LifeLiner'; //Voertuig naam
-    VoertuigenDefinitie[23][2] = 'MMT-Heli'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[23][2] = 'nef'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
     VoertuigenDefinitie[23][3] = 0; //Aantal onderweg
     VoertuigenDefinitie[23][4] = "NL"; // GameVersie
 
@@ -622,8 +617,8 @@ function LoadVoertuigen() {
 
     VoertuigenDefinitie[37] = [];
     VoertuigenDefinitie[37][0] = 37; //ID Voertuig
-    VoertuigenDefinitie[37][1] = 'NIKS'; //Voertuig naam
-    VoertuigenDefinitie[37][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[37][1] = 'MMT-Auto'; //Voertuig naam
+    VoertuigenDefinitie[37][2] = 'nef'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
     VoertuigenDefinitie[37][3] = 0; //Aantal onderweg
     VoertuigenDefinitie[37][4] = "NL"; // GameVersie
 
