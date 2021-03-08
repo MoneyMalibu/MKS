@@ -117,10 +117,44 @@ function SelectVoertuigen() {
 
 
                 } else if (c === 'battalion_chief_vehicles') {
+                    let ovd_HovD = VoertuigenDefinitie[3][3];
+                    ovd_HovD += VoertuigenDefinitie[19][3];
 
+                    let NieuweNodig = VoertuigAantal - ovd_HovD;
+                    let NewSetCount = 0;
+
+                    $('#vehicle_show_table_all tbody tr').map(function () {
+                        var $row = $(this);
+                        $(this).closest('td').find(':checkbox').prop('checked', true);
+
+                        var checkboxid = this.childNodes[1].firstElementChild.id;
+                        var autoid = this.childNodes[5].attributes["0"].nodeValue;
+
+                        for (var v = 0; v < VoertuigenDefinitie.length; v++) {
+                            if (VoertuigenDefinitie[v][0] == autoid) {
+                                if (VoertuigenDefinitie[v][2] == 'battalion_chief_vehicles') {
+                                    if (NewSetCount < NieuweNodig) {
+                                        document.getElementById(checkboxid).checked = true;
+                                        VoertuigenDefinitie[v][3] += 1;
+                                        NewSetCount += 1;
+                                    }
+                                }
+                                if (VoertuigenDefinitie[v][2] == 'mobile_command_vehicles') {
+                                    if (NewSetCount < NieuweNodig) {
+                                        document.getElementById(checkboxid).checked = true;
+                                        VoertuigenDefinitie[v][3] += 1;
+                                        NewSetCount += 1;
+                                    }
+                                }
+                            }
+                        }
+                    })
                     
+                    if (NewSetCount < NieuweNodig) {
+                        ALLSET = 0;
+                    }
 
-                } else {
+                } else if (c != 'battalion_chief_vehicles') {
 
                     let TotaalMissieAanwezig = 0;
                     for (var v = 0; v < VoertuigenDefinitie.length; v++) {
