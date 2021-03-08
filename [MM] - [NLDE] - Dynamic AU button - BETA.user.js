@@ -256,7 +256,7 @@ function SelectVoertuigen() {
                     // MMT Sturen
 
                     let VoertuigType = c;
-                    let VoertuigAantal = GameMissieData[i].additional[c];
+                    let VoertuigAantal = 1;
 
                     let TotaalMissieAanwezig = 0;
                     for (var v = 0; v < VoertuigenDefinitie.length; v++) {
