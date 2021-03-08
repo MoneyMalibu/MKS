@@ -116,6 +116,10 @@ function SelectVoertuigen() {
                     }
 
 
+                } else if (c === 'battalion_chief_vehicles') {
+
+                    
+
                 } else {
 
                     let TotaalMissieAanwezig = 0;
