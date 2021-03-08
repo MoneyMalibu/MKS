@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - Dynamic AU button - BETA
 // @namespace    http://tampermonkey.net/
-// @version      2021.03.8.00.01
+// @version      2021.03.08.00.02
 // @description  try to take over the world!
 // @author       You
 // @downloadURL  https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20Dynamic%20AU%20button%20-%20BETA.user.js
@@ -55,6 +55,10 @@ function SelectVoertuigen() {
     var HelpButton = help.find("a[id*='mission_help']").parent().parent().parent();
     let missionId = $('#mission_help').attr('href').split("/").pop().replace(/\?.*/, '');
     console.log("[MM] - MKS - AU Dynamic - Missie nummer: " + missionId);
+
+    var MissingVoertuigen = document.getElementById("missing_text")
+    MissingVoertuigen.innerHTML = " ";
+    document.getElementById("missing_text").style.display = "block";
 
 
     for (var i = 0; i < GameMissieData.length; i++) {
@@ -152,6 +156,7 @@ function SelectVoertuigen() {
                     
                     if (NewSetCount < NieuweNodig) {
                         ALLSET = 0;
+                        MissingVoertuigen.innerHTML += "<br> Geen - OVD/HOD";
                     }
 
                 } else if (c != 'battalion_chief_vehicles') {
@@ -190,6 +195,7 @@ function SelectVoertuigen() {
 
                         if (NewSetCount < NieuweNodig) {
                             ALLSET = 0;
+                            MissingVoertuigen.innerHTML += "<br> Geen - " + VoertuigType;
                         }
                     }
 
@@ -239,6 +245,7 @@ function SelectVoertuigen() {
 
                         if (NewSetCount < NieuweNodig) {
                             ALLSET = 0;
+                            MissingVoertuigen.innerHTML += "<br> Geen - " + VoertuigType;
                         }
                     }
 
@@ -281,6 +288,7 @@ function SelectVoertuigen() {
 
                             if (NewSetCount < NieuweNodig) {
                                 ALLSET = 0;
+                                MissingVoertuigen.innerHTML += "<br> Geen - " + VoertuigType;
                             }
                         }
                     }
@@ -330,6 +338,7 @@ function SelectVoertuigen() {
 
                         if (NewSetCount < NieuweNodig) {
                             ALLSET = 0;
+                            MissingVoertuigen.innerHTML += "<br> Geen - " + VoertuigType;
                         }
                     }
                 }
