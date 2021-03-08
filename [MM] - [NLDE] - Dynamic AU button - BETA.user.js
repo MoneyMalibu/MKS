@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - Dynamic AU button - BETA
 // @namespace    http://tampermonkey.net/
-// @version      2021.03.08.00.03
+// @version      2021.03.08.00.04
 // @description  try to take over the world!
 // @author       You
 // @downloadURL  https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20Dynamic%20AU%20button%20-%20BETA.user.js
@@ -15,6 +15,7 @@ var VoertuigenWaterVersterking;
 
 // Ophalen van de missie data
 var GameMissieData;
+var iets = 0;
 
 (function () {
     console.log("MKS [NL] - [MM] - Gestart");
