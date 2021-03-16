@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NL] - SetPoi
 // @namespace    http://tampermonkey.net/
-// @version      2021.03.08.00.04
+// @version      2021.03.16.00.00
 // @description  try to take over the world!
 // @author       ScriptKing
 // @match        https://www.meldkamerspel.com/*
@@ -19,6 +19,7 @@
 
         debugger;
 
+        var klaar = 0;
         for (var i = 0; i < pois.length; i++) {
             setTimeout(function () {
                 $.ajax({
@@ -34,7 +35,8 @@
                 }).done((res) => {
                     console.log(`${i + 1} / ${pois.length}`)
                     var tag = document.getElementById("SetPoiBosZuidNL");
-                    tag.innerText = "POI's plaatsen - " + i + " / " + (pois.length);
+                    klaar += 1;
+                    tag.innerText = "POI's plaatsen - " + klaar + " / " + (pois.length);
                 });
             }, 700 * i
 
@@ -48,6 +50,7 @@
         
         debugger;
 
+        var klaar = 0;
         for (var i = 0; i < pois.length; i++) {
             setTimeout(function () {
                 $.ajax({
@@ -63,7 +66,8 @@
                 }).done((res) => {
                     console.log(`${i + 1} / ${pois.length}`)
                     var tag = document.getElementById("SetPoiBoerderijZuidNL");
-                    tag.innerText = "POI's plaatsen - " + i + " / " + (pois.length);
+                    klaar += 1;
+                    tag.innerText = "POI's plaatsen - " + klaar + " / " + (pois.length);
                 });
             }, 700 * i
 
