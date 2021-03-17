@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         [MM] - [NL] - SetPoi
 // @namespace    http://tampermonkey.net/
-// @version      2021.02
+// @version      2021.03
 // @description  try to take over the world!
 // @author       ScriptKing
 // @match        https://www.meldkamerspel.com/*
+// @updateURL    https://github.com/MoneyMalibu/MKS/raw/master/MM_NL_SetPoi.user.js
+// @downloadURL  https://github.com/MoneyMalibu/MKS/raw/master/MM_NL_SetPoi.user.js
 // @grant        none
 // ==/UserScript==
 
