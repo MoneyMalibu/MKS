@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NL] - SetPoi
 // @namespace    http://tampermonkey.net/
-// @version      2021.03.17.00.01
+// @version      2021.01
 // @description  try to take over the world!
 // @author       ScriptKing
 // @match        https://www.meldkamerspel.com/*
