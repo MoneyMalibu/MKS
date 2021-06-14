@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [MM] - [NLDE] - Dynamic AU button - BETA
 // @namespace    http://tampermonkey.net/
-// @version      2021.10.04
+// @version      2021.11.00
 // @description  try to take over the world!
 // @author       You
 // @updateURL    https://github.com/MoneyMalibu/MKS/raw/master/%5BMM%5D%20-%20%5BNLDE%5D%20-%20Dynamic%20AU%20button%20-%20BETA.user.js
@@ -1381,6 +1381,48 @@ function LoadVoertuigenDE() {
     VoertuigenDefinitie[61][2] = 'water_tankers'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
     VoertuigenDefinitie[61][3] = 0; //Aantal onderweg
     VoertuigenDefinitie[61][4] = "NL"; // GameVersie
+
+    VoertuigenDefinitie[62] = [];
+    VoertuigenDefinitie[62][0] = 62; //ID Voertuig
+    VoertuigenDefinitie[62][1] = ''; //Voertuig naam
+    VoertuigenDefinitie[62][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[62][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[62][4] = "NL"; // GameVersie
+
+    VoertuigenDefinitie[63] = [];
+    VoertuigenDefinitie[63][0] = 63; //ID Voertuig
+    VoertuigenDefinitie[63][1] = ''; //Voertuig naam
+    VoertuigenDefinitie[63][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[63][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[63][4] = "NL"; // GameVersie
+
+    VoertuigenDefinitie[64] = [];
+    VoertuigenDefinitie[64][0] = 64; //ID Voertuig
+    VoertuigenDefinitie[64][1] = ''; //Voertuig naam
+    VoertuigenDefinitie[64][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[64][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[64][4] = "NL"; // GameVersie
+
+    VoertuigenDefinitie[65] = [];
+    VoertuigenDefinitie[65][0] = 65; //ID Voertuig
+    VoertuigenDefinitie[65][1] = 'DAT-RB'; //Voertuig naam
+    VoertuigenDefinitie[65][2] = 'water_rescue'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[65][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[65][4] = "NL"; // GameVersie
+
+    VoertuigenDefinitie[66] = [];
+    VoertuigenDefinitie[66][0] = 66; //ID Voertuig
+    VoertuigenDefinitie[66][1] = 'KHV'; //Voertuig naam
+    VoertuigenDefinitie[66][2] = 'water_rescue'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[66][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[66][4] = "NL"; // GameVersie
+
+    VoertuigenDefinitie[67] = [];
+    VoertuigenDefinitie[67][0] = 67; //ID Voertuig
+    VoertuigenDefinitie[67][1] = 'BA-RB'; //Voertuig naam
+    VoertuigenDefinitie[67][2] = 'boats'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[67][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[67][4] = "NL"; // GameVersie
 
 
 
