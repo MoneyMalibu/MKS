@@ -865,6 +865,27 @@ function LoadVoertuigen() {
     VoertuigenDefinitie[65][2] = ''; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
     VoertuigenDefinitie[65][3] = 0; //Aantal onderweg
     VoertuigenDefinitie[65][4] = "NL"; // GameVersie
+    
+    VoertuigenDefinitie[65] = [];
+    VoertuigenDefinitie[65][0] = 65; //ID Voertuig
+    VoertuigenDefinitie[65][1] = 'DAT-RB'; //Voertuig naam
+    VoertuigenDefinitie[65][2] = 'water_rescue'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[65][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[65][4] = "NL"; // GameVersie
+
+    VoertuigenDefinitie[66] = [];
+    VoertuigenDefinitie[66][0] = 66; //ID Voertuig
+    VoertuigenDefinitie[66][1] = 'KHV'; //Voertuig naam
+    VoertuigenDefinitie[66][2] = 'water_rescue'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[66][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[66][4] = "NL"; // GameVersie
+
+    VoertuigenDefinitie[67] = [];
+    VoertuigenDefinitie[67][0] = 67; //ID Voertuig
+    VoertuigenDefinitie[67][1] = 'BA-RB'; //Voertuig naam
+    VoertuigenDefinitie[67][2] = 'boats'; //Mission Regel gekoppeld bijvoorbeeld: "firetrucks"
+    VoertuigenDefinitie[67][3] = 0; //Aantal onderweg
+    VoertuigenDefinitie[67][4] = "NL"; // GameVersie
 
 
 
